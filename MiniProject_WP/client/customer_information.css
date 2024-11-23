@@ -1,0 +1,119 @@
+/* Base Styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+ 
+ body {
+   font-family: 'Roboto', Arial, sans-serif;
+   background-image: url('asserts/cust_bg.jpeg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   margin: 0;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ /* Background Overlay */
+ body::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   backdrop-filter: blur(8px);
+   z-index: -1;
+ }
+ 
+ /* Form Container */
+ .form-container {
+   max-width: 400px;
+   width: 100%;
+   background: #fff;
+   padding: 30px;
+   border-radius: 12px;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ h2 {
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 26px;
+   color: #333;
+   font-weight: 600;
+ }
+ 
+ label {
+   display: block;
+   margin-bottom: 8px;
+   font-size: 14px;
+   font-weight: 500;
+   color: #444;
+ }
+ 
+ input, select {
+   width: 100%;
+   padding: 12px;
+   margin-bottom: 20px;
+   border: 1px solid #ddd;
+   border-radius: 6px;
+   font-size: 14px;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+ }
+ 
+ input:focus {
+   border-color: #007BFF;
+   box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+   outline: none;
+ }
+ 
+ button {
+   width: 100%;
+   padding: 12px;
+   border: none;
+   border-radius: 6px;
+   background: linear-gradient(45deg, #007BFF, #0056b3);
+   color: white;
+   font-size: 16px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: transform 0.2s ease, box-shadow 0.3s ease;
+ }
+ 
+ button:hover {
+   transform: scale(1.05);
+   box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+ }
+ 
+ button a {
+   text-decoration: none;
+   color: white;
+   display: block;
+ }
+ 
+ /* Media Query for Smaller Screens */
+ @media (max-width: 480px) {
+   .form-container {
+     padding: 20px;
+   }
+ 
+   h2 {
+     font-size: 22px;
+   }
+ 
+   input, select {
+     padding: 10px;
+     font-size: 13px;
+   }
+ 
+   button {
+     font-size: 15px;
+   }
+ }
+ 

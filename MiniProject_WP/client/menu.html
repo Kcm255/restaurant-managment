@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <header>
+        Menu Page
+    </header>
+    <div class="menu-container">
+        <!-- Menu items -->
+        <div class="menu-item">
+            <img src="asserts/pizza.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>Price: ₹250</p>
+            <button onclick="addToCart('Pizza', 250)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="asserts/burger.jpeg" alt="Burger">
+            <h3>Burger</h3>
+            <p>Price: ₹150</p>
+            <button onclick="addToCart('Burger', 150)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="asserts/pasta.jpeg" alt="Pasta">
+            <h3>Pasta</h3>
+            <p>Price: ₹200</p>
+            <button onclick="addToCart('Pasta', 200)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="asserts/fries.jpeg" alt="Fries">
+            <h3>Fries</h3>
+            <p>Price: ₹100</p>
+            <button onclick="addToCart('Fries', 100)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="asserts/sandwich.jpeg" alt="Sandwich">
+            <h3>Sandwich</h3>
+            <p>Price: ₹120</p>
+            <button onclick="addToCart('Sandwich', 120)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="asserts/salad.jpeg" alt="Salad">
+            <h3>Salad</h3>
+            <p>Price: ₹80</p>
+            <button onclick="addToCart('Salad', 80)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="asserts/chicken_wings.jpeg" alt="Chicken Wings">
+            <h3>Chicken Wings</h3>
+            <p>Price: ₹300</p>
+            <button onclick="addToCart('Chicken Wings', 300)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="asserts/icecream.jpeg" alt="Ice Cream">
+            <h3>Ice Cream</h3>
+            <p>Price: ₹90</p>
+            <button onclick="addToCart('Ice Cream', 90)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="asserts/tacos.jpeg" alt="Tacos">
+            <h3>Tacos</h3>
+            <p>Price: ₹180</p>
+            <button onclick="addToCart('Tacos', 180)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="asserts/noodles.jpeg" alt="Noodles">
+            <h3>Noodles</h3>
+            <p>Price: ₹220</p>
+            <button onclick="addToCart('Noodles', 220)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="cart-container">
+        <h2>Cart</h2>
+        <div id="cart-items">
+            <!-- Items will be dynamically added here -->
+        </div>
+        <div class="cart-total" id="cart-total">
+            Total: ₹0
+        </div>
+        <button class="submit-btn" onclick="submitOrder()">Submit Order</button>
+        <div id="thank-you-message" class="thank-you-message"></div>
+    </div>
+    <script src="menu.js"></script>
+</body>
+</html>
